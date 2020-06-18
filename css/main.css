@@ -107,29 +107,48 @@ textarea {
  header .content-wrapper {
 	display:flex;
 	justify-content: center;
-	align-items: center;	 
+	align-items: center;	
+	flex-flow: row wrap;
+	width: 90%;
+	margin: 0;
  }
  
  header .figure {
-	 
+	 width: 60%;
  }
  
  header .header-divider{
-	 
+	 width: 90%;
  }
  
  header nav {
 	 display: flex;
 	 justify-content:center;
 	 align-items: center;
-	 flex-flow: row-wrap;
+	 flex-flow: row wrap;
+	 width: 60%;
  }
    
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 70%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+   
+header nav ul li {
+	padding: 0;
+}
 
 /***** Mobile Styles - Homepage *****/
 
-
  .hero-area {
+	 width: 85%;
+	 margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -145,6 +164,8 @@ textarea {
 
 
 .features {
+	width: 85%;
+	margin: 5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -157,10 +178,18 @@ textarea {
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
+	 width: 60%;
 }
 
+.features article {
+	width: 60%;
+	margin: 0 4rem;
+	text-align: center;
+}
 
 .reviews {
+	width: 90%;
+	margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -197,13 +226,29 @@ footer {
 	
 }
 
-
-footer .contact-section {
+footer .footer-content {
+	width: 55%;
+	margin: 50px 0;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
 }
+
+footer .contact-section {
+	width: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+footer p {
+	margin: 0;
+}
+
+
+
 
 
 
