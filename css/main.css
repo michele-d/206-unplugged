@@ -83,9 +83,133 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
+/*==========================================================================
    Author's custom styles
-   ========================================================================== */
+========================================================================== */
+
+/***** Base Header - Footer Styles ****/ 
+   
+ header, 
+ footer {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+ }
+ 
+ 
+ /***** Header Styles *****/
+   
+ header {
+	
+ }  
+   
+ header .content-wrapper {
+	display:flex;
+	justify-content: center;
+	align-items: center;	 
+ }
+ 
+ header .figure {
+	 
+ }
+ 
+ header .header-divider{
+	 
+ }
+ 
+ header nav {
+	 display: flex;
+	 justify-content:center;
+	 align-items: center;
+	 flex-flow: row-wrap;
+ }
+   
+
+/***** Mobile Styles - Homepage *****/
+
+
+ .hero-area {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+ }
+   
+ .aside {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+ }
+
+
+.features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-flow: row wrap;
+}
+
+.features features-items {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+}
+
+
+.reviews {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+}
+
+
+.mission {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+}
+
+.faq {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+}
+
+
+.faq content-wrapper{
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+}
+/***
+
+** Footer Styles *****/
+
+footer {
+	
+}
+
+
+footer .contact-section {
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: row wrap;
+}
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
