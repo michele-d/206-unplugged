@@ -153,37 +153,36 @@ header nav ul li {
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
- }
+}
    
- .aside {
+aside {
+	 width: 85%;
+	 margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
- }
+}
 
+.form h2, input {
+	margin: 10px;
+} 
 
-.features {
+.features h1 {
 	width: 85%;
 	margin: 5%;
+}
+
+.features-container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	align-content: center;
-	flex-flow: row wrap;
+	flex-flow: column;
 }
 
-.features features-items {
-	 display:flex;
-	 justify-content: center;
-	 align-items: center;
-	 flex-flow: row wrap;
-	 width: 60%;
-}
-
-.features article {
-	width: 60%;
-	margin: 0 4rem;
+.features-item {
+	display: flex;
+	width: 45%;
 	text-align: center;
 }
 
@@ -196,38 +195,56 @@ header nav ul li {
 	 flex-flow: row wrap;
 }
 
+.reviews-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
 
-.mission {
+/***** Mobile Styles - FAQ & About pages ******/
+
+.mission-content {
+	 width: 90%;
+	 margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
 }
 
-.faq {
+.faq-section, .contact-section {
+	width: 90%;
+	margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
 }
 
-
-.faq content-wrapper{
+.content-wrapper {
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
 }
-/***
 
-** Footer Styles *****/
+.contact-wrapper h1, .contact-item {
+		width: 90%;
+		margin: 5%;
+}
+
+
+
+
+/***** Footer Styles *****/
 
 footer {
 	
 }
 
 footer .footer-content {
-	width: 55%;
+	width: 90%;
 	margin: 50px 0;
 	 display:flex;
 	 justify-content: center;
@@ -241,6 +258,11 @@ footer .contact-section {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+}
+
+footer .contact-item{
+	width: 100%;
+	text-align: center;
 }
 
 footer p {
@@ -344,16 +366,137 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 760px) {
+/*Tablet styles here*/
+	 header .content-wrapper {
+		justify-content: space-between;
+		flex-flow: row;
+		width: 80%;
+		margin: 0 10%;
+	}
+	header nav {
+		width: 25%;
+	}
+	
+	.header-divider{
+		display:none;
+	}
+	.hero-area {
+		width: 65%;
+		margin: 0 10%;
+	}
+	aside {
+		margin: 0 10%;
+		display:flex;
+		justify-content: space-between;
+	}
+	.form-description,
+	.form {
+		width: 40%;
+	}
+	
+	.features-container {
+		 height: 500px;
+		 flex-basis: 500px;
+		 display:flex;
+		 justify-content: space-around;
+		 align-items: center;
+		 flex-flow: column wrap;
+	 }
+	.features-item {
+		width: 25%;
+		display:flex;
+		text-align: center;
+	}
+	
+	.features h1 {
+		width: 90%;
+		margin: 10%;
+	}
+
+	.reviews {
+		margin: 0;
+		height: 500px;
+	}
+	.reviews h1 {
+		width: 90%;
+		margin: 0 10%;
+	}
+	
+	.reviews-wrapper {
+		height: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column wrap;
+		margin: 0 5%;
+	}
+
+	.reviews img, .reviews h2, .reviews p {
+		width: 40%;
+		display: flex;
+	}
+	
+	footer .footer-content {
+		width: 65%;
+		display:flex;
+		flex-flow:column;
+		
+	}
+	
+	footer .contact-section {
+		height:360px;
+		width: 100%;
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row;
+	}
+
+	footer .contact-item {
+		height:150px;
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: column;
+	}
+	
+/***** About Page for Tablet *****/
+	.mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .mission-content p {
+        width: 45%
+    }
+	
+	.contact-wrapper h1 {
+		width: 90%;
+		margin: 5%;
+	}
+
+
+/***** Faq Page for Tablet *****/
+
+	.faq-section, .contact-wrapper, .content-wrapper {
+        justify-content: space-around;
+    }
+    
+    .faq-content, .contact-item {
+        flex-basis: 40%;
+    }
+ 
+    .faq-section h1 {
+        width: 90%;
+    }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+ 
+
+
 
 /* ==========================================================================
    Print styles.
