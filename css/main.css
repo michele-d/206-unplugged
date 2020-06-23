@@ -114,7 +114,6 @@ a {
 h1 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.25rem;
-	margin: 0 5%;
 	font-weight: 500;
 }
  
@@ -180,8 +179,6 @@ address p {
 	justify-content: center;
 	align-items: center;	
 	flex-flow: row wrap;
-	width: 90%;
-	margin: 0;
  }
  
  header .figure {
@@ -223,6 +220,10 @@ header nav ul li {
 	 align-items: center;
 	 flex-flow: row wrap;
 }
+
+.hero-area h1 {
+	margin: 0 10px;
+}
    
 aside {
 	 display:flex;
@@ -238,8 +239,7 @@ aside {
 } 
 
 .features h2 {
-	width: 90%;
-	margin: 5%;
+	margin:10px;
 }
 
 .features-container {
@@ -256,29 +256,22 @@ aside {
 }
 
 .reviews {
-	 display:flex;
-	 justify-content: center;
-	 align-items: center;
-	 flex-flow: row wrap;
-	 background-color: #2a423a;
+	background-color: #2a423a;
+	padding: 100px 0;
 }
 
-.reviews h3 {
-	width:100%;
+.reviews h2 {
+	margin: 0 5%;
 }
 
 .reviews-wrapper {
+	margin: 0 5%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	flex-flow: column;
-	width: 90%;
 }
 
-.reviews h2, .reviews h3 {
-	line-height: 1.875rem;
-	margin: 5%;
-}
 /***** Mobile Styles - FAQ & About pages ******/
 
 .mission-content {
@@ -498,8 +491,6 @@ input[type=button] {
 	 header .content-wrapper {
 		justify-content: space-between;
 		flex-flow: row;
-		max-width: 80%;
-		margin: 0 10%;
 	}
 	header nav {
 		max-width: 25%;
@@ -508,26 +499,31 @@ input[type=button] {
 	.header-divider{
 		display:none;
 	}
-	.hero-area {
-		max-width: 70%;
 	
-	}
 	.hero-area h1{
+		max-width: 70%;
 		margin: 0 5%;
 		text-align: left;
 	}
 	aside {
-		margin: 0 10%;
 		display:flex;
-		justify-content: space-between;
+		justify-content: space-around;
+		align-items: center;	
+		flex-flow: row wrap;
 	}
 	.form-description,
 	.form {
-		max-width: 40%;
+		margin: 10 0%;
+		max-width: 30%;
 	}
 	
+	input[type=text] {
+		padding: .5em;
+	}
+	input[type=button] {
+	padding: 10px 0;
+	}
 	.features-container {
-		 max-height: 500px;
 		 flex-basis: 500px;
 		 display:flex;
 		 justify-content: space-around;
@@ -541,17 +537,16 @@ input[type=button] {
 	}
 	
 	.features h2 {
-		max-width: 90%;
-		margin: 10%;
+		margin: 0 5%;
+		text-align: left;
 	}
 
 	.reviews {
 		margin: 0;
 		max-height: 500px;
 	}
-	.reviews h2, .reviews h3 {
-		max-width: 90%;
-		margin: 0;
+	.reviews h2, 
+	.reviews h3 {
 		text-align: left;
 	}
 	
