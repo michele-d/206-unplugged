@@ -97,6 +97,7 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
+	color: #e2e3ed;	
 }
  
 ul, 
@@ -113,21 +114,26 @@ a {
 h1 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.25rem;
+	margin: 0 5%;
+	font-weight: 500;
 }
  
 h2 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.875rem;
+	font-weight: 500;
 }
  
 h3 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.125rem;
+	font-weight: 500;
 } 
 h4 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.5rem;
+	font-weight: 500;
 }
  
 p {
@@ -143,8 +149,9 @@ figure {
  
 }
  
-address {
+address p {
 	font-style: normal;
+	margin: 0;
 }
  
 .content-wrapper {
@@ -158,6 +165,7 @@ address {
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
+	 background-color: #202322;
  }
  
  
@@ -209,9 +217,7 @@ header nav ul li {
 
 /***** Mobile Styles - Homepage *****/
 
- .hero-area {
-	 width: 85%;
-	 margin: 5%;
+.hero-area {
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -219,20 +225,20 @@ header nav ul li {
 }
    
 aside {
-	 width: 85%;
-	 margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
+	 background-color: #527158;
 }
 
-.form h3, input {
+
+.form, .form-description  {
 	margin: 10px;
 } 
 
 .features h2 {
-	width: 85%;
+	width: 90%;
 	margin: 5%;
 }
 
@@ -250,12 +256,15 @@ aside {
 }
 
 .reviews {
-	width: 90%;
-	margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
 	 flex-flow: row wrap;
+	 background-color: #2a423a;
+}
+
+.reviews h3 {
+	width:100%;
 }
 
 .reviews-wrapper {
@@ -263,10 +272,12 @@ aside {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column;
+	width: 90%;
 }
 
-.reviews h2 {
+.reviews h2, .reviews h3 {
 	line-height: 1.875rem;
+	margin: 5%;
 }
 /***** Mobile Styles - FAQ & About pages ******/
 
@@ -279,9 +290,17 @@ aside {
 	 flex-flow: row wrap;
 }
 
+.faq-section, .mission {
+	background-color: #527158;
+}
+
+.contact-wrapper {
+	background-color: #2a423a;
+	height: 350px;
+	
+}
+	
 .faq-section, .contact-section {
-	width: 90%;
-	margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -290,9 +309,13 @@ aside {
 
 .faq-section h2 {
 	line-height: 1.875rem;
+		width: 90%;
+	margin: 1.33em 5% 0 5%;
 }
 
 .content-wrapper {
+	 width: 90%;
+	 margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -301,11 +324,17 @@ aside {
 
 .contact-wrapper h2, .contact-item {
 		width: 90%;
-		margin: 5%;
+		margin: 0 5%;
 }
 
+.contact-wrapper h2 {
+	margin-top: 50px;
+}
 
-
+.contact-item h4 {
+	margin: 10px 0;
+	
+}
 
 /***** Footer Styles *****/
 
@@ -340,6 +369,33 @@ footer p {
 	color: #e2e3ed;
 }
 
+/***** Form Styles *****/
+
+aside .form {
+  margin-top: 10px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
@@ -493,9 +549,10 @@ footer p {
 		margin: 0;
 		max-height: 500px;
 	}
-	.reviews h2 {
+	.reviews h2, .reviews h3 {
 		max-width: 90%;
-		margin: 0 10%;
+		margin: 0;
+		text-align: left;
 	}
 	
 	.reviews-wrapper {
@@ -504,10 +561,10 @@ footer p {
 		justify-content: center;
 		align-items: center;
 		flex-flow: column wrap;
-		margin: 0 5%;
+		margin: 0;
 	}
 
-	.reviews img, .reviews h3, .reviews p {
+	.reviews img, .reviews p {
 		max-width: 40%;
 		display: flex;
 	}
