@@ -183,7 +183,7 @@ address p {
 	flex-flow: row wrap;
  }
  
- header .figure {
+ header figure {
 	 width: 60%;
 	 display: flex;
     justify-content: center;
@@ -305,6 +305,22 @@ aside {
 	 flex-flow: row wrap;
 }
 
+.map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
 .faq-section, .mission {
 	background-color: #527158;
 }
@@ -312,6 +328,7 @@ aside {
 .contact-wrapper {
 	background-color: #2a423a;
 	height: 350px;
+	padding-top: 50px;
 	
 }
 	
