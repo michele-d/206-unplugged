@@ -141,10 +141,12 @@ p {
 }
  
 img {
+	width: 100%;
  
 }
  
 figure {
+
  
 }
  
@@ -210,22 +212,29 @@ header nav ul {
    
 header nav ul li {
 	padding: 0;
+	font-size: 1.125rem;
 }
 
 /***** Mobile Styles - Homepage *****/
 
 .hero-area {
+	height: 500px;
+	background-image: url('../img/hero2.jpg');
+	background-position: center;
+	background-size: cover;
 	 display:flex;
 	 justify-content: center;
-	 align-items: center;
+	 align-items: flex-start;
 	 flex-flow: row wrap;
 }
 
 .hero-area h1 {
-	margin: 0 10px;
+	margin: 50px 10px 0 10px;
+	
 }
    
 aside {
+	 min-height: 350px;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -238,8 +247,15 @@ aside {
 	margin: 10px;
 } 
 
+.features {
+	background-image: url('../img/reviews-background.png');
+	background-position:center;
+	background-size: cover;
+}
+
 .features h2 {
-	margin:10px;
+	margin: 0 10px;
+	padding-top: 45px;
 }
 
 .features-container {
@@ -257,11 +273,11 @@ aside {
 
 .reviews {
 	background-color: #2a423a;
-	padding: 100px 0;
+	padding: 30px 0;
 }
 
 .reviews h2 {
-	margin: 0 5%;
+	margin: 30px 5%;
 }
 
 .reviews-wrapper {
@@ -271,7 +287,9 @@ aside {
 	align-items: flex-start;
 	flex-flow: column;
 }
-
+ .reviews figure {
+	 margin: 0;
+ }
 /***** Mobile Styles - FAQ & About pages ******/
 
 .mission-content {
@@ -380,6 +398,7 @@ input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
+  margin-bottom: 50px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -496,16 +515,24 @@ input[type=button] {
 		max-width: 25%;
 	}
 	
+	header figure {
+		width:30%;
+	}
+	
 	.header-divider{
 		display:none;
 	}
-	
+
+	.hero-area {
+		height: 600px;
+	}
 	.hero-area h1{
-		max-width: 70%;
-		margin: 0 5%;
+		margin: 90px 60px 0 60px;
 		text-align: left;
+		font-size: 3rem;	
 	}
 	aside {
+		min-height: 240px;
 		display:flex;
 		justify-content: space-around;
 		align-items: center;	
@@ -543,11 +570,24 @@ input[type=button] {
 
 	.reviews {
 		margin: 0;
-		max-height: 500px;
+		min-height: 500px;
+		display:flex;
+		justify-content: center;
+		flex-flow: column;
 	}
+	
 	.reviews h2, 
 	.reviews h3 {
 		text-align: left;
+	}
+	
+	.reviews h2{
+	margin: 30px 50px;
+    max-width: 65%;
+    font-size: 2.25rem;
+	}
+	.reviews h3 {
+		font-size: 1.5rem;
 	}
 	
 	.reviews-wrapper {
@@ -556,12 +596,20 @@ input[type=button] {
 		justify-content: center;
 		align-items: center;
 		flex-flow: column wrap;
-		margin: 0;
+		margin: 0 50px;
 	}
-
-	.reviews img, .reviews p {
-		max-width: 40%;
+	
+	.review-item {
+		max-width: 50%;
 		display: flex;
+		flex-flow: column;
+		margin: 0 20px;
+	}
+	
+	.reviews figure {
+		height: 200px;
+		width: 320px;
+		margin: 0;
 	}
 	
 	footer .footer-content {
@@ -623,6 +671,17 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
+
+	.hero-area h1 {
+		margin-top: 50px;
+		margin-left: 120px;
+		margin-right: 380px;
+		text-align: left;
+		font-size: 3.75rem;
+	}
+	header figure {
+		width:30%;
+	}
 	.features-container {
 		 height: 450px;
 		 width:83%;
@@ -639,6 +698,16 @@ input[type=button] {
 		margin: 0 95px;
 	}
 	
+	.reviews-wrapper {
+		max-height: 400px;
+	}
+	.reviews figure {
+		height: 300px;
+		width: 460px;
+	}
+	.reviews h2 {
+		margin: 30px 5%;
+	}
 }
 
 
