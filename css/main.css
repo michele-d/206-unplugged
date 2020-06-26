@@ -146,7 +146,7 @@ img {
 }
  
 figure {
-
+	margin: 0;
  
 }
  
@@ -185,6 +185,10 @@ address p {
  
  header .figure {
 	 width: 60%;
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
  }
  
  header .header-divider{
@@ -680,7 +684,7 @@ input[type=button] {
 		font-size: 3.75rem;
 	}
 	header figure {
-		width:30%;
+		width:25%;
 	}
 	.features-container {
 		 height: 450px;
