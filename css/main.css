@@ -181,6 +181,7 @@ address p {
 	justify-content: center;
 	align-items: center;	
 	flex-flow: row wrap;
+	margin: 5%;
  }
  
  header figure {
@@ -262,6 +263,10 @@ aside {
 	padding-top: 45px;
 }
 
+.features i {
+	font-size: 3.75em;
+}
+
 .features-container {
 	display: flex;
 	justify-content: space-around;
@@ -273,6 +278,8 @@ aside {
 	display: flex;
 	width: 45%;
 	text-align: center;
+	flex-flow: column;
+	margin-bottom: 30px;
 }
 
 .reviews {
@@ -566,27 +573,42 @@ input[type=button] {
 	input[type=button] {
 	padding: 10px 0;
 	}
+	  /* Features */
+
 	.features-container {
-		 flex-basis: 500px;
-		 display:flex;
-		 justify-content: space-around;
-		 align-items: center;
-		 flex-flow: column wrap;
-	 }
-	.features-item {
-		max-width: 25%;
-		display:flex;
-		text-align: center;
+		height: 600px;
+		width: 63%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row wrap;
+		margin-left: 100px;
 	}
-	
 	.features h2 {
-		margin: 0 5%;
+		margin: 0 50px;
 		text-align: left;
+		font-size: 2.25rem;
+		padding-top: 80px;	
+		padding-bottom:20px;
+	}
+	.features i {
+		font-size: 4.5 rem;
+	}
+	.features-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column wrap;
+		flex-basis: 50%;
+	}
+  
+	.features .features-item-description {
+		width: 62%;
 	}
 
 	.reviews {
 		margin: 0;
-		min-height: 500px;
+		min-height: 450px;
 		display:flex;
 		justify-content: center;
 		flex-flow: column;
@@ -626,6 +648,7 @@ input[type=button] {
 		height: 200px;
 		width: 320px;
 		margin: 0;
+		overflow: hidden;
 	}
 	
 	footer .footer-content {
@@ -702,6 +725,11 @@ input[type=button] {
 	header figure {
 		width:25%;
 	}
+	
+	aside h3 {
+		font-size: 1.875rem;
+	}
+
 	.features-container {
 		 height: 450px;
 		 width:83%;
@@ -710,12 +738,14 @@ input[type=button] {
 		 align-items: center;
 		 flex-flow: row wrap;
 		 margin-left: 100px;
+		 padding-bottom: 50px;
 	 }
 	.features-item {
-		width: 16%;
+		width: 20%;
 		display:flex;
 		text-align: center;
-		margin: 0 95px;
+		margin: 0 55px;
+		flex-basis: auto;
 	}
 	
 	.reviews-wrapper {
