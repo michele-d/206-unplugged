@@ -327,7 +327,7 @@ aside {
 
 .contact-wrapper {
 	background-color: #2a423a;
-	height: 350px;
+	height: 300px;
 	padding-top: 50px;
 	
 }
@@ -341,13 +341,12 @@ aside {
 
 .faq-section h2 {
 	line-height: 1.875rem;
-		width: 90%;
+	width: 90%;
 	margin: 1.33em 5% 0 5%;
 }
 
 .content-wrapper {
 	 width: 90%;
-	 margin: 5%;
 	 display:flex;
 	 justify-content: center;
 	 align-items: center;
@@ -357,10 +356,6 @@ aside {
 .contact-wrapper h2, .contact-item {
 		width: 90%;
 		margin: 0 5%;
-}
-
-.contact-wrapper h2 {
-	margin-top: 50px;
 }
 
 .contact-item h4 {
@@ -673,6 +668,10 @@ input[type=button] {
 		max-width: 90%;
 		margin: 5%;
 	}
+	
+	.map figure {
+		padding-bottom: 45%;
+	}
 
 
 /***** Faq Page for Tablet *****/
@@ -728,6 +727,10 @@ input[type=button] {
 	}
 	.reviews h2 {
 		margin: 30px 5%;
+	}
+	
+		.map figure {
+		padding-bottom: 37.5%;
 	}
 }
 
