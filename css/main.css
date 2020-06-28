@@ -192,8 +192,11 @@ address p {
     flex-flow: row wrap;
  }
  
- header .header-divider{
-	 width: 90%;
+ .header-divider {
+  background: #3a3a3a; 
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
  }
  
  header nav {
@@ -393,14 +396,37 @@ footer .contact-section {
 	flex-flow: row wrap;
 }
 
-footer .contact-item{
+footer .contact-item {
 	width: 100%;
 	text-align: center;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row;
+}
+footer .fontawesome-icon {
+	display:flex;
+	font-size: 1em;
+	border-radius: 50%;
+	background-color: #527158;
+	padding: 1em;
+	margin: 1em;
+}
+
+footer .contact-item h4 {
+	margin: 30px 0 10px 0;
 }
 
 footer p {
 	margin: 0;
 	color: #e2e3ed;
+}
+
+.copyright {
+	padding-top: 20px;
 }
 
 /***** Form Styles *****/
@@ -652,7 +678,6 @@ input[type=button] {
 	}
 	
 	footer .footer-content {
-		max-width: 65%;
 		display:flex;
 		flex-flow:column;
 		
