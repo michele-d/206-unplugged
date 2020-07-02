@@ -662,7 +662,7 @@ input[type=button] {
 	  /* Features */
 
 	.features-container {
-		height: 700px;
+		min-height: 700px;
 		width: 75%;
 		display: flex;
 		justify-content: space-between;
