@@ -213,7 +213,7 @@ header nav ul {
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
-	width: 70%;
+	width: 85%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -442,6 +442,8 @@ footer p {
 
 .copyright {
 	padding-top: 20px;
+	width: 55%;
+    text-align: center;
 }
 
 /***** Form Styles *****/
@@ -723,7 +725,7 @@ input[type=button] {
 		justify-content: center;
 		align-items: center;
 		flex-flow: row wrap;
-		margin: 0 50px;
+		margin: 0 40px;
 	}
 	
 	.review-item {
